@@ -33,8 +33,10 @@
     let rollList : number[] = [1,2,3]
 
     // we can not set or push another types 
-    friends.push(5);
-    rollList.push('A')
+    // friends.push(5); //wrong type
+    // rollList.push('A') //wrong type
+    friends.push('A');
+    rollList.push(5)
 
 
     // Tuple
