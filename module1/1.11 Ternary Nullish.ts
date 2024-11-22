@@ -12,8 +12,8 @@ if(age >= 18){
 const isAdult = age>= 18? "adult" : "not adult";
 // console.log(isAdult);
 
-// Nullish coalescing operator -- ??
-// decision make for -> null / undefined
+// Nullish coalescing operator -- ' ?? '
+// use to decision make for -> null / undefined
 
 const isAuthenticated = null;
 const isAuthenticated2 = undefined;
