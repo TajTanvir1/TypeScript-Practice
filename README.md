@@ -1,4 +1,12 @@
 # TypeScript-Practice
 
 ## What is TypeScript
-- TypeScript is a superset of JavaScript that adds static typing and other advanced features to the language. It was developed and maintained by Microsoft and is designed to make JavaScript development more robust and scalable.
+- TypeScript is an Object Oriented Programming Language that is build on top of JS with Extra features.
+
+- TypeScript code can be transpiled into older version of JS.
+
+- Benefits of Using TS
+  1. Supports Older Browser
+  2. Type Safety
+  3. Increase your productivity.
+  4. Less Bugs and Less Testing.
