@@ -20,6 +20,11 @@
 - Interface, Void, Array, Tuple, Enum, Union, Intersection
 
 ## keyof
-- Use to catch types of a type
+- Use to catch types of a type.
+
+## key
+- [key] is use for looping 
+like - 
+[key in keyof T] : T[key];
 
 
