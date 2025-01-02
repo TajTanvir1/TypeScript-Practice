@@ -12,6 +12,8 @@ type AreaNumber = {
     width: number;
 }
 
+type Height = AreaNumber["height"] //Lookup type
+
 // keyof AreaNumber = "height" | "width"
 
 type AreaString = {
