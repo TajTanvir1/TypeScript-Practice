@@ -19,4 +19,7 @@
 ## TS types
 - Interface, Void, Array, Tuple, Enum, Union, Intersection
 
+## keyof
+- Use to catch types of a type
+
 
