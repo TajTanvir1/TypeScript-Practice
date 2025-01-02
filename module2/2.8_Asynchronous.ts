@@ -31,8 +31,8 @@ const createPromise = (): Promise<Something> => {
 };
 
 // calling create promise function
-const showData = async () : Promise<string> =>{
-    const data : string = await createPromise();
+const showData = async () : Promise<Something> =>{
+    const data : Something = await createPromise();
     console.log(data);
     return data;
 }
