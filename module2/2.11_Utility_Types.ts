@@ -58,7 +58,7 @@ type MyObj = Record<string, number> //first one for key type, second one for val
 const obj : MyObj = {
     a: 2,
     b: 3,
-    c: "a" //value set number so if we want to add string type it will show error
+    // c: "a" //value set number so if we want to add string type it will show error
 }
 
 // We can use Record type dynamically for objects

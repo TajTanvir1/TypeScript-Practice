@@ -12,15 +12,16 @@ type AreaNumber = {
     width: number;
 }
 
-type Height = AreaNumber["height"] //Lookup type
 
 // keyof AreaNumber = "height" | "width"
 
 type AreaString = {
+    // [key in "height" | "width"] : string
     [key in keyof AreaNumber] : string
 }
 
 {
+    type Height = AreaNumber["height"] //Lookup type
 
     // T => {height:string}
     // key => T["height"] | T["width"]
