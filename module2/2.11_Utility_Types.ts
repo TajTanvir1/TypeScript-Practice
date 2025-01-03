@@ -50,6 +50,26 @@ const person1 : PersonReadonly = {
 // person1.name='y'
 // Cannot assign to 'name' because it is a read-only property.
 
+// Record
+// Use to define Dynamic key and types
+
+type MyObj = Record<string, number> //first one for key type, second one for value
+
+const obj : MyObj = {
+    a: 2,
+    b: 3,
+    c: "a" //value set number so if we want to add string type it will show error
+}
+
+// We can use Record type dynamically for objects
+const DynamicObj : Record<string, unknown> = {
+    // type Record<K extends keyof any, T> = { [P in K]: T; }
+// Construct a type with a set of properties K of type T
+    a: 2,
+    b: 3,
+    c: "a",
+    d:true,
+}
 
 
 
