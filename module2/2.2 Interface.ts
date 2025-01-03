@@ -27,6 +27,7 @@
         age: 26
     }
 
+// Intersection
 
 type UserWithRole1 = User1 & {role:string};
 
