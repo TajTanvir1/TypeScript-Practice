@@ -14,6 +14,13 @@
             this._balance = _balance;
         }
 
+        // protected _balance: number; //if we need to use in child then we should use protected
+        constructor(id: number, name: string, _balance: number) {
+            this.id = id;
+            this.name = name;
+            this._balance = _balance;
+        }
+
         addDeposit(amount: number) {
             this._balance = this._balance + amount;
         }
