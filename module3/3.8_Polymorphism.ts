@@ -32,8 +32,17 @@
 getSleepingHours(person1);
 
 
+class Shape {
+    getArea(): number{
+        return 0;
+    }
+}
 
-
+class Circle extends Shape{
+    getArea(radius : number): number {
+        
+    }
+}
 
 
 
