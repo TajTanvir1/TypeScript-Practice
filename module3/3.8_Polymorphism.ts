@@ -72,7 +72,7 @@ const getShapeArea =(param : Shape)=>{
 
 const shape1 = new Shape();
 const shape2 = new Circle(10);
-const shape3 = new Shape(10, 20);
+const shape3 = new Rectangle(10, 20);
 
 getShapeArea(shape1)
 getShapeArea(shape2)
