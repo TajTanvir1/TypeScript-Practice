@@ -183,6 +183,22 @@ function printUpperCase(value: unknown): void {
 printUpperCase("hello"); // Output: HELLO
 printUpperCase(123);      // Output: Value is not a string.
 
+// Task 15: Type Guards
+function isString(value: unknown): value is string {
+  return typeof value === "string";
+}
+
+function printUpperCase(value: unknown): void {
+  if (isString(value)) {
+    console.log(value.toUpperCase());
+  } else {
+    console.log("Value is not a string.");
+  }
+}
+
+printUpperCase("hello"); // Output: HELLO
+printUpperCase(123);      // Output: Value is not a string.
+
 // Task 16: Utility Types and Keyof Constraints
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
