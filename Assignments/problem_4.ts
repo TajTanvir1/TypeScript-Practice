@@ -21,62 +21,38 @@
 // 24;
 
 
-{
-
-    class Shape {
-        getArea(): number {
-            return 0;
-        }
-    }
-
-    // Circle Area - pi * r * r
-    class Circle extends Shape {
-        radius: number;
-
-        constructor(radius: number) {
-            super();
-            this.radius = radius;
-        }
-        getArea(): number {
-            return Math.PI * this.radius * this.radius;
-        }
+{    
+    class Circle {
+        constructor(public shape: "circle", public radius: number) { }
     }
 
 
-    class Rectangle extends Shape {
-        height: number;
-        width: number;
-
-        constructor(height: number, width: number) {
-            super();
-            this.height = height;
-            this.width = width;
-        }
-        getArea(): number {
-            return this.height * this.width;
-        }
+    class Rectangle {
+        constructor(public shape: "rectangle", public height: number, public width: number) { }
     }
+
+    type Shape = Circle | Rectangle;
 
     const calculateShapeArea = (param: Shape) => {
-        console.log(param.getArea());
-        return param.getArea();
+        if(param.shape === "circle"){
+           const Area = Math.PI * param.radius * param.radius
+           console.log(Area)
+           return Area
+        } else if(param.shape === "rectangle"){
+            const Area = param.height * param.width;
+            console.log(Area)
+            return Area;
+        }
     }
 
-    const shape1 = new Shape();
-    const shape2 = new Circle(10);
-    const shape3 = new Rectangle(10, 20);
 
-    // const rectangleArea = calculateShapeArea({
-    //       shape: "rectangle",
-    //       width: 4,
-    //       height: 6,
-    //     });
+    const rectangleArea = calculateShapeArea({
+        shape: "rectangle",
+        width: 4,
+        height: 6,
+    });
 
-        // const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+    const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
 
 
-        calculateShapeArea(shape1)
-        calculateShapeArea(shape2)
-        calculateShapeArea(shape3)
-
-    }
+}
