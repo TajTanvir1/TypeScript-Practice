@@ -37,7 +37,7 @@
     abstract class Car2 {
         abstract startEngine(): void;
         abstract stopEngine(): void;
-        abstract move(): void;.
+        abstract move(): void;
         test() {
             console.log("Testing");
         }
